@@ -116,7 +116,7 @@ nav
 .resum 
 {
 	background-color: rgb(255, 255, 255);
-	height: 122vh;
+	/*height: 122vh;*/
 	color: rgb(44,62,80);
 	align-items: center;
 }
