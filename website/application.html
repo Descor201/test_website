@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Milk E-Way</title>
+  <link rel="stylesheet" href="application.style.css">
+  <script src="website.rs"></script>
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+  <header>
+  	<nav>
+		<div class="logo">
+                    <img src="images/logo.png" alt="logo">
+            	</div>
+		<ul class="nav-links">
+                	<li><a href="../index.html">Présentation</a></li>
+               	 	<li><a href="application.html">Application</a></li>
+           	</ul>
+	</nav>
+
+  </header>
+  <main class="content">
+	<section class="appli">
+		<h1>Application</h1>
+		<div class="komtuveu">
+			<div class="buttons">
+				<button type="button" class="but left" id="left"> <img src="images/left.png"/></button>
+				<button type="button" class="but top" id="top"> <img src="images/top.png"/></button>
+				<button type="button" class="but bottom" id="bottom"> <img src="images/bottom.png"/></button>
+				<button type="button" class="but right" id="right"> <img src="images/right.png"/></button>
+			</div>
+		</div>
+	</section>
+	<section class="telemetry">
+		<h1>Télémetrie</h1>
+		<div class="graphs">
+			<div class="graphr">
+            			<h2>Vitesse linéaire</h2>
+            			<canvas id="graph1"></canvas>
+            			<h2>Détection des capteurs</h2>
+            			<canvas id="graph3"></canvas>
+       			</div>
+        		<div class="graphl">
+            			<h2>Vitesse par roue</h2>
+            			<canvas id="graph2"></canvas>
+            			<h2>Vitesse angulaire</h2>
+            			<canvas id="graph4"></canvas>
+        		</div>
+		</div>
+	</section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src=../graph/chart.js></script>
+  <footer>
+  	<p>© Akame 2024, All Rights Reserved</p>
+  </footer>
+</body>
+</html>

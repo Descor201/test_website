@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Milk E-Way</title>
+  <link rel="stylesheet" href="website/style.css">
+  <script src="website.rs"></script>
+  <link rel="icon" type="image/png" href="website/images/logo.png">
+</head>
+<body>
+  <header>
+  	<nav>
+		<div class="logo">
+                    <img src="website/images/logo.png" alt="logo">
+            	</div>
+		<ul class="nav-links">
+                	<li><a href="index.html">Présentation</a></li>
+               	 	<li><a href="website/application.html">Application</a></li>
+           	</ul>
+	</nav>
+
+  </header>
+  <main>
+  	<section class="preamb">
+		<h1>Préambule</h1>
+		<div class="content">
+			<p class="text">Le “Milk E-Way”, un robot de transport capable de déplacer un objet. Pour cela, le prototype respecte plusieurs 				prérequis. Il est tout d’abord capable de se mouvoir dans l'environnement qui l'entoure. En effet, il possède un mode 
+				manuel pour le contrôler facilement. De plus, il possèdera un système qui lui permet de suivre une ligne au sol grâce à 				des capteurs sous le robot. Son objectif sera, lorsqu'il est arrivé au bout de la ligne, de ramener un objet grâce à un 				éléctroaimant disposé à l'avant. Puis de revenir directement à sa position initiale sans repasser par la ligne.
+			</p>
+			<div class="robot">
+				<img src="website/images/robot.png" alt="robot">
+			</div>
+		</div>
+	</section>
+	<section class="resum">
+		<div class="contmeca">
+			<div class="txt">
+				<h2>Mécanique</h2>
+				<p class="meca">Tout d'abord la partie mécanique du robot. Ce robot est composé de nombreuses pièces : les roues, les moteurs (pour faire tourner les roues), l'éléctroaimant (afin de pouvoir récupérer l'objet), les capteurs (pour détecter la ligne sous le robot), le microcontrôleur, la Raspberry (étant donné que le microcontrôleur n'était pas assez performant pour autant de calculs), le bouton d'arrêt d'urgence (en cas de problème), et enfin la batterie (pour alimenter le robot).
+				</p>
+			</div>
+			<div class="backrobot">
+				<img src="website/images/backrobot.png" alt="backrobot">
+			</div>
+		</div>
+		<div class="contelec">
+			<div class="circelec">
+				<img src="website/images/imprimcarte.png" alt="circelec">
+			</div>
+			<div class="txt">
+				<h2 class="h2elec">Éléctronique</h2>
+				<p class="elec">Pour cette partie, on peut voir le circuit imprimé du robot disposé en différentes parties : la partie des capteurs en rose, l'alimentation en rouge, le moteur en violet, et enfin toute une partie pour debug en vert.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="equip">
+			<section class="col">
+				<div class="descor20">
+					<h1>@Descor20</h1>
+					<p>Le chef du groupe, aka celui balancé dans le tas quand les autres osent pas parler à quelqu'un. C'est celui 
+					qui s'occupe de la partie télémétrie sur le site web, ainsi que du contrôle du robot (aidé par Akame pour cette 						partie)</p>
+				</div>
+				<div class="laure">
+					<h1>@laure</h1>
+					<p>La seule qui savait un minimum ce qu'était un robot, et la manière d'en concevoir un. Elle est chargée de 							faire le montage, câblage et assemblage du robot, ainsi que ses modélisations (en étant bien évidemment 						épaulée par les autres membres du groupe)</p>
+				</div>
+				<div class="i123456789">
+					<h1>@1234</h1>
+					<p> La fantôme du groupe qui possède un fanclub à l'intérieur de celui-ci, mais qui fusionne avec les murs 						lorsque des personnes qu'elle ne connaît pas arrivent. Elle est chargée de faire l'application du robot et de s'					occuper du wifi (qui permettra la liaison entre l'application et le robot).</p>
+				</div> 
+				<div class="akame">
+					<h1>@Akame</h1>
+					<p> La seule qui finira toujours par sortir une nouvelle connerie inattendue. Elle est chargée du site web et de 						l'aimant du robot, bien qu'elle aie tout encore à apprendre, elle dispose d'une arme secrète : son 
+						réseau de personnes dévouées pour l'aider.</p>
+				</div>
+			</section>
+	</section>
+  </main>
+  <footer>
+  	<p>© Akame 2024, All Rights Reserved</p>
+  </footer>
+</body>
+</html>

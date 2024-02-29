@@ -1,0 +1,339 @@
+body
+{
+	font-family: "Segoe UI";
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+header 
+{
+	transition: all 0.5s;
+    	top: 0;
+    	left: 0;
+    	width: 100vw;
+    	z-index: 997;
+	position: fixed;
+    	height: 10vh;
+	padding: 15px 0;
+    	background-color: rgb(44, 62, 80);
+	border-bottom: 1px solid;
+}
+
+nav
+{
+	margin: 0 0%;
+    	display: flex;
+   	justify-content: space-around;
+   	align-items: center;
+    	height: 100%;
+	padding-top: 0rem;
+}
+
+.nav-links 
+{
+   	width: 50%;
+    	display: flex;
+	gap: 7%;
+    	list-style: none;
+	left: 110px;
+	margin: 0;
+ 	padding: 0;
+	position: absolute;
+}
+
+.nav-links li a 
+{
+	position: relative;
+	text-decoration: none;
+	color: rgb(255,255,255);
+}
+
+.logo img 
+{
+    max-height: 80px;
+}
+
+.logo
+{
+	position: absolute;
+  	left: 0px;
+}
+
+.preamb
+{
+    	background-color: #1abc9c;
+	height: 70vh;
+	width: 100%;
+	align-items: center;
+	padding: 2.5rem 0.2rem 1rem 0.2rem;
+}
+
+.content
+{		
+	display: flex;
+   	justify-content: space-between;
+	vertical-align: middle;
+}
+
+.robot
+{
+	width: 40%;
+	vertical-align: center;
+  	left: 7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.robot img
+{
+	height: 25rem;
+}
+
+
+.content .text
+{
+	align-items: center;
+	width: 55%;
+	right: 70px;
+	position: absolute;
+	color: rgb(255, 255, 255);
+	vertical-align: middle;
+	padding-top: 10px;
+}
+
+.preamb h1
+{
+	padding-top: 20px;
+	margin-top: 0px;
+	color: rgb(255, 255, 255);
+}
+
+.resum 
+{
+	background-color: rgb(255, 255, 255);
+	height: 122vh;
+	color: rgb(44,62,80);
+	align-items: center;
+}
+
+.resum h2
+{
+	color: #1abc9c;
+	font-size: 2rem;
+}
+
+.resum p
+{
+	color: rgb(44, 62, 80);
+	font-size: 1.4rem;
+}
+
+.h2elec
+{
+	text-align: right;
+}
+
+.contmeca .txt
+{
+	padding: 0rem 0rem 0rem 2rem;
+}
+
+.contelec .txt
+{
+	padding: 0rem 2rem 0rem 2rem;
+	text-align: right;
+	width: 40%;
+}
+
+.contmeca
+{
+	display: flex;
+	padding: 0rem 2rem 2rem 2rem;
+	justify-content: space-between;
+	vertical-align: middle;
+}
+
+.meca
+{
+	width: 80%;
+	vertical-align: center;
+}
+
+.backrobot
+{
+	width: 30%;
+	padding: 2rem 4rem 0rem 0rem;
+}
+
+.backrobot img
+{
+	height: 25rem;
+}
+
+.elec
+{
+	vertical-align: center;
+}
+
+.circelec
+{
+	width: 55%;
+	padding: 0rem 0rem 0rem 4rem;
+}
+
+.circelec img
+{
+	height: 22rem;
+}
+
+.contelec
+{
+	display: flex;
+	justify-content: space-between;
+	vertical-align: middle;
+	padding: 1rem;
+	background-color: rgb(220,220,220);
+}
+
+.equip
+{
+	background-color: #1abc9c;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.col
+{
+	display: flex;
+  	justify-content: space-between;
+	padding: 10px;
+	height: 75vh;
+	flex-wrap: wrap;
+	max-width: 100%;
+	width: 100%;
+
+}
+
+.col > div
+{
+	width: calc(25% - 10px); 
+  	margin: 25px;
+	flex: 1;
+}
+
+.descor20
+{
+	border: 3px;
+	border-radius: 1;
+	background-color: rgb(255,255,255);
+	text-align: center;
+	color: rgb(42,60,80);
+}
+
+.descor20 p
+{
+	text-align: center;
+	padding: 0px 25px;
+	font-size: 1.35rem;
+}
+
+.descor20 h1
+{
+	font-size: 2rem;
+	color: #1abc9c;
+}
+
+
+.laure
+{
+	border: 2px;
+	border-radius: 1;
+	background-color: rgb(255,255,255);
+	text-align: center;
+	color: rgb(42,60,80);
+
+}
+
+.laure h1
+{
+	font-size: 2rem;
+	color: #1abc9c;
+}
+
+.laure p
+{
+	text-align: center;
+	padding: 0px 25px;
+	font-size: 1.35rem;
+}
+
+.i123456789
+{
+	border: 3px;
+	border-radius: 1;
+	background-color: rgb(255,255,255);
+	text-align: center;
+	color: rgb(42,60,80);
+}
+
+.i123456789 p
+{
+	text-align: center;
+	padding: 0px 25px;
+	font-size: 1.35rem;
+}
+
+.i123456789 h1
+{
+	font-size: 2rem;
+	color: #1abc9c;
+}
+
+
+.akame
+{
+	border: 3px;
+	border-radius: 1;
+	background-color: rgb(255,255,255);
+	text-align: center;
+	color: rgb(42,60,80);
+}
+
+.akame p
+{
+	text-align: center;
+	padding: 0px 25px;
+	font-size: 1.35rem;
+}
+
+.akame h1
+{
+	font-size: 2rem;
+	color: #1abc9c;
+}
+
+footer
+{
+	background-color: rgb(33, 37, 41);
+	align-items: center;
+	height: 3vh;
+	width: 100%;
+	padding: 1rem 0rem 0rem 0rem;;
+	margin: 0px;
+}
+
+footer p
+{
+	color: rgb(240,240,240);
+	text-align: center;
+	font-size: 0.8rem;
+	vertical-align: middle;
+	margin: 0px 0px 10px 0px;
+}
