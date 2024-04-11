@@ -2,7 +2,8 @@
 // Établissement de la connexion WebSocket
 //const socket = io('http://192.168.185.31:3000'); // ??
 //const socket = io('http://localhost:3000'); // own computer
-const socket = io('http://192.168.239.31:3000'); // Raspberry Pi : Wifi "1234"
+//const socket = io('http://192.168.239.31:3000'); // Raspberry Pi : Wifi "1234"
+const socket = io('http://192.168.64.31:3000'); // Raspberry Pi : Wifi TelK
 
 let t = 0;
 var interval;
