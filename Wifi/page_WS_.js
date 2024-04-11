@@ -23,8 +23,15 @@ let manual_button = document.getElementById("manual");
 manual_button.addEventListener('mouseup', () => set_man_on());
 let auto_button = document.getElementById("auto");
 auto_button.addEventListener('mouseup', () => set_man_off());
+/*
+ * Avancée pour la prochaine soutenance, ajout du mod manuelee==e= et automatique depuis le site
+ * */
+
 
 // ========================= Function gestion des clee ========================
+/*
+ * Ensemble des fonctions gerant la communication entre le scrip et les bouttons.
+ */
 function addButtonClick_visual(index) {
     pressedKey_v[index] = true;
 }
