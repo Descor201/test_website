@@ -4,9 +4,10 @@ body
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
-	font-size: 1.5rem;
+	font-size: 3.5vh;
 	font-weight: bold;
 }
+
 
 h2
 {
@@ -24,9 +25,9 @@ header
     	z-index: 997;
 	position: fixed;
     	height: 10vh;
-	padding: 15px 0;
+	padding: 3vh 1vw;
     	background-color: rgb(44,62,80);
-	border-bottom: 1px solid;
+	border-bottom: 0px solid;
 }
 
 nav
@@ -46,7 +47,7 @@ nav
     	gap: 7%;
     	list-style: none;
 	position: absolute;
-  	left: 110px;
+  	left: 8vw;
 	margin: 0;
 	padding: 0;
 }
@@ -60,20 +61,21 @@ nav
 
 .logo img 
 {
-    	max-height: 80px;
+    	max-height: 12.5vh;
 }
 
 .logo
 {
 	position: absolute;
-  	left: 0px;
+  	left: 0.5vw;
 }
 
 .content
 {
 	display: flex;
 	justify-content: space-between;
-	height: 110vh;
+	height: 180vh; /*ancienne valeur a 110vh. Changement de la valeur pour faire rentrer la partie Console et Map visuelle*/
+	/*Regarder a l'affichage de la console de l'inspection de la page*/
 	padding-top: 13vh;
 }
 
@@ -81,40 +83,64 @@ nav
 {
     	background-color: #1abc9c;
 	width: 40%;
-	padding: 10px 20px;
+	padding: 1vh 1vw;
 }
 
 .appli h1
 {
-	padding: 10px 20px;
+	padding: 5vh 2vw;
 	margin-top: 0px;
 	color: rgb(255,255,255);
 }
 
+.butmod
+{
+	height: 8vh;
+	width: 8vw;
+	background-color: rgb(255,255,255);
+	border: none;
+	font-family: "Segoe UI";
+	font-weight: bold;
+	color: #1abc9c;
+	position: absolute;
+	left: 15.5vw;
+}
+
+/*:hover a été ajouté pour creer une transition de couleur sur les boutons ainsi qu'un background différent pour l'impression de cliquer*/
+.butmod:hover
+{
+	background: gray;
+	transition: 0.3s;
+}
+
+.automatic
+{
+	top: 97%;
+}
 
 .komtuveu
 {
 	text-align: center;
     	position: relative;
-	height: 600px;
+	height: 70vh;
 }
 
 .buttons
 {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
 }
 
 .but
 {
-	padding: 10px 20px;
-    	margin: 10px;
+	padding: 1vh 1vw;
+    	margin: 1vh;
     	background-color: #4CAF50;
     	color: white;
     	border: none;
-    	border-radius: 5px;
+    	border-radius: 0vh;
     	cursor: pointer;
 }
 
@@ -129,9 +155,12 @@ nav
 	border: transparent;
 }
 
-.left img
+.left img, 
+.top img,
+.right img,
+.bottom img
 {
-	width: 150px;
+	width: 22vh;
 }
 
 .bottom
@@ -144,26 +173,16 @@ nav
     	transform: translateX(-50%);
 }
 
-.top img
-{
-	width: 150px;
-}
-
 .left
 {
 	background-color : transparent;
 	border: transparent;
 	position: absolute;
     	top: 50%;
-	padding-left: 10px;
-	margin-left: 10px;
-    	right: -10px;
+	padding-left: 2vw;
+	margin-left: 2vw;
+    	right: -0.5vw;
     	transform: translateY(-55%);
-}
-
-.right img
-{
-	width: 150px;
 }
 
 .top
@@ -176,25 +195,63 @@ nav
     	transform: translateX(-50%);
 }
 
-.bottom img
+.electro
 {
-	width: 150px;
+	height: 10vh;
+	justify-content: space-between;
+	padding: 3vh 3vw 0 3vw;
+	align-items: center;
+	display: flex;
 }
 
+.electro h2
+{
+	color: rgb(250,250,250);
+	vertical-align: center;
+}
+
+.el
+{
+	height: 5vh;
+	width : 7vw;
+	border: none;
+	vertical-align: center;
+	color: #1abc9c;
+	font-size: 2vh;
+	font-weight: bold;
+}
+/*:hover a été ajouté pour creer une transition de couleur sur les boutons ainsi qu'un background différent pour l'impression de cliquer*/
+.el:hover
+{
+	background: gray;
+	transition: 0.3s;
+}
+
+.visual
+{
+	padding: 0;
+}
+
+.visual h2
+{
+	color: rgb(250,250,250);
+	vertical-align: center;
+	width: 28vw;
+}
 
 .telemetry
 {
 	background-color: rgb(250, 250, 250);
 	width: 60%;
-	padding: 10px 30px;
+	padding: 1vh 3vw;
 }
 
 .telemetry h1
 {
 	margin-top: 0px;
-	right: 10px;
+	right: 1vw;
 	position: absolute;
-	padding: 10px 40px;
+	padding: 5vh 2vw;
 	color: #1abc9c;
 	/*color: rgb(44,62,80);*/
 }
@@ -202,20 +259,26 @@ nav
 .graphs
 {
 	display: flex;
-	padding: 8rem 0rem;
+	padding: 18vh 0rem 0 0;
 	justify-content: space-between;
 }
 
 .graphr
 {
 	width: 50%;
-	padding: 10px 20px;
+	padding: 1vh 2vw;
 }
 
 .graphl
 {
 	width: 50%;
-	padding: 10px 20px;
+	padding: 1vh 2vw;
+}
+
+.visual
+{
+	align-items: center;
+	padding: 0 0 0 2vw;
 }
 
 footer
@@ -224,15 +287,16 @@ footer
 	align-items: center;
 	height: 3vh;
 	width: 100%;
-	padding: 1rem 0rem 0rem 0rem;
+	padding: 1vh 0rem 0rem 0rem;
 	margin: 0px;
+	bottom: 0px;
 }
 
 footer p
 {
 	color: rgb(240,240, 240);
 	text-align: center;
-	font-size: 0.8rem;
+	font-size: 1.6vh;
 	vertical-align:	middle;
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 0.1vh 0px;
 }

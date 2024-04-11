@@ -1,0 +1,24 @@
+// renouveller état
+/*
+function telemetrie(data) {
+    const wheelStates = data.split(":");
+    document.getElementById("left-wheel-state").textContent = wheelStates[0];
+    document.getElementById("right-wheel-state").textContent = wheelStates[1];
+    //console.log('fin changement');
+}*/
+/*// envoie bouton cliqué
+document.querySelectorAll(".but").forEach(button => { //.but ??? Where did it go ?
+    button.addEventListener("mousedown", () => {
+        const action = button.getAttribute("data-action");
+        socket.emit('action', String(action));
+        console.log('envoie bouton');
+    });
+    button.addEventListener("mouseup", () => {
+        const action = button.getAttribute("data-action");
+        socket.emit('not-action', String(action));
+    });
+    button.addEventListener("mouseleave", () => {
+        const action = button.getAttribute("data-action");
+        socket.emit('not-action', String(action));
+    });
+});*/

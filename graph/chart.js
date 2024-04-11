@@ -3,6 +3,8 @@ let g_2 = null;
 let g_3 = null;
 let g_4 = null;
 
+let pressedKeyG = {}; // test pour les clee laissées pressées
+
 function main() {
     let g1 = appli_speed("graph1");             // Graph of the linear speed
     g_1 = g1;

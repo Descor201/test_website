@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Milk E-Way</title>
   <link rel="stylesheet" href="application.style.css">
-  <script src="website.rs"></script>
   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
@@ -18,42 +18,84 @@
                	 	<li><a href="application.html">Application</a></li>
            	</ul>
 	</nav>
+      <!--<a href="../download/acme-doc-2.0.1.txt" download="MEW Documentation (ver. 0.0.1).txt">Fiche d'utilisation'</a>--><!--mes test de download-->
 
   </header>
   <main class="content">
-	<section class="appli">
-		<h1>Application</h1>
-		<div class="komtuveu">
-			<div class="buttons">
-				<button type="button" class="but left" id="left"> <img src="images/left.png"/></button>
-				<button type="button" class="but top" id="top"> <img src="images/top.png"/></button>
-				<button type="button" class="but bottom" id="bottom"> <img src="images/bottom.png"/></button>
-				<button type="button" class="but right" id="right"> <img src="images/right.png"/></button>
-			</div>
-		</div>
-	</section>
-	<section class="telemetry">
-		<h1>Télémetrie</h1>
-		<div class="graphs">
-			<div class="graphr">
-            			<h2>Vitesse linéaire</h2>
-            			<canvas id="graph1"></canvas>
-            			<h2>Détection des capteurs</h2>
-            			<canvas id="graph3"></canvas>
-       			</div>
-        		<div class="graphl">
-            			<h2>Vitesse par roue</h2>
-            			<canvas id="graph2"></canvas>
-            			<h2>Vitesse angulaire</h2>
-            			<canvas id="graph4"></canvas>
-        		</div>
-		</div>
-	</section>
+      <section class="appli">
+          <h1>Application</h1>
+          <button type="button" class="butmod manual" id="manual">Mode Manuel</button>              <!--Le module wifi ne recupere pas encore le boutton-->
+          <div class="komtuveu">
+              <div class="buttons">
+                  <button type="button" class="but left" id="left" data-action="btn1"> <img src="images/left.png" /></button>
+                  <button type="button" class="but top" id="top" data-action="btn2"> <img src="images/top.png" /></button>
+                  <button type="button" class="but bottom" id="bottom" data-action="btn3"> <img src="images/bottom.png" /></button>
+                  <button type="button" class="but right" id="right" data-action="btn4"> <img src="images/right.png" /></button>
+              </div>
+          </div>
+          <button type="button" class="butmod automatic" id="auto">Mode Automatique</button>      <!--Le module wifi ne recupere pas encore le boutton-->
+          <div class="electro">
+              <h2>Électroaimant :</h2>
+              <button type="button" class="el on" data-action="aimanton">On</button>    <!--Le module wifi ne recupere pas encore le boutton-->
+              <button type="button" class="el off" data-action="aimantoff">Off</button> <!--Le module wifi ne recupere pas encore le boutton-->
+          </div>
+          <div class="visual" id="visualp">
+              <h2>Carte</h2>
+              <canvas id="visual_canvas" height="0" width="0"></canvas>
+              <script src=../visual/p5.js></script>
+              <script src=../visual/sketch.js></script>
+          </div>
+      </section>
+      <section class="telemetry">
+          <h1>Télémetrie</h1>
+          <div class="graphs">
+              <div class="graphr">
+                  <h2>Vitesse linéaire</h2>
+                  <canvas id="graph1"></canvas>
+                  <h2>Détection des capteurs</h2>
+                  <canvas id="graph3"></canvas>
+              </div>
+              <div class="graphl">
+                  <h2>Vitesse par roue</h2>
+                  <canvas id="graph2"></canvas>
+                  <h2>Vitesse angulaire</h2>
+                  <canvas id="graph4"></canvas>
+              </div>
+          </div>
+          <!--modification &1 par Kylian-->
+
+          <div class="console">
+              <h2>Console</h2>
+              <div class="console_c">
+                  <script src=../console/console.js></script>
+              </div>
+          </div>
+
+          <!-- Ajout de la partie map visuelle de la télémétrie (a finir)
+          <div class="visual" id="visualp">
+              <h2>Carte</h2>
+              <canvas id="visual_canvas" height="400" width="400"></canvas>
+              <script src=../visual/p5.js></script>
+              <script src=../visual/sketch.js></script>
+          </div>
+          -->
+          <!--fin modification &1-->
+      </section>
   </main>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src=../graph/chart.js></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+  	integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+  	crossorigin="anonymous"></script>
+    <!--modification &2 par Kylian-->
+    <!-- On a un nouveau script pour le Wifi, on m'a assuré qu'il était fonctionnel mais faut le tester -->
+  <script src="../Wifi/page_WS_.js"></script>
+    <!--fin modification &2-->
+
   <footer>
-  	<p>© Akame 2024, All Rights Reserved</p>
+  	<p>© Milk E-Way Team 2024, All Rights Reserved</p>
   </footer>
 </body>
 </html>

@@ -4,7 +4,7 @@ body
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
-	font-size: 1.5rem;
+	font-size: 3.5vh;
 	font-weight: bold;
 }
 
@@ -17,9 +17,9 @@ header
     	z-index: 997;
 	position: fixed;
     	height: 10vh;
-	padding: 15px 0;
+	padding: 3vh 1vw;
     	background-color: rgb(44, 62, 80);
-	border-bottom: 1px solid;
+	border-bottom: 0px solid;
 }
 
 nav
@@ -38,7 +38,7 @@ nav
     	display: flex;
 	gap: 7%;
     	list-style: none;
-	left: 110px;
+	left: 8vw;
 	margin: 0;
  	padding: 0;
 	position: absolute;
@@ -53,13 +53,13 @@ nav
 
 .logo img 
 {
-    max-height: 80px;
+    	max-height: 12.5vh;
 }
 
 .logo
 {
 	position: absolute;
-  	left: 0px;
+  	left: 0.5vw;
 }
 
 .preamb
@@ -68,7 +68,7 @@ nav
 	height: 70vh;
 	width: 100%;
 	align-items: center;
-	padding: 2.5rem 0.2rem 1rem 0.2rem;
+	padding: 2.5vh 0.2vw 1vh 0.2vw;
 }
 
 .content
@@ -82,7 +82,7 @@ nav
 {
 	width: 40%;
 	vertical-align: center;
-  	left: 7rem;
+  	left: 7vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -91,7 +91,7 @@ nav
 
 .robot img
 {
-	height: 25rem;
+	height: 58vh;
 }
 
 
@@ -99,7 +99,7 @@ nav
 {
 	align-items: center;
 	width: 55%;
-	right: 70px;
+	right: 10vh;
 	position: absolute;
 	color: rgb(255, 255, 255);
 	vertical-align: middle;
@@ -116,7 +116,6 @@ nav
 .resum 
 {
 	background-color: rgb(255, 255, 255);
-	/*height: 122vh;*/
 	color: rgb(44,62,80);
 	align-items: center;
 }
@@ -124,13 +123,13 @@ nav
 .resum h2
 {
 	color: #1abc9c;
-	font-size: 2rem;
+	font-size: 5vh;
 }
 
 .resum p
 {
 	color: rgb(44, 62, 80);
-	font-size: 1.4rem;
+	font-size: 3.2vh;
 }
 
 .h2elec
@@ -140,20 +139,21 @@ nav
 
 .contmeca .txt
 {
-	padding: 0rem 0rem 0rem 2rem;
+	padding: 0rem 0rem 0rem 2vw;
 }
 
 .contelec .txt
 {
-	padding: 0rem 2rem 0rem 2rem;
+	padding: 0rem 2vw 0rem 2vw;
 	text-align: right;
+	vertical-align: middle;
 	width: 40%;
 }
 
 .contmeca
 {
 	display: flex;
-	padding: 0rem 2rem 2rem 2rem;
+	padding: 0rem 2vw 2vh 2vw;
 	justify-content: space-between;
 	vertical-align: middle;
 }
@@ -167,12 +167,12 @@ nav
 .backrobot
 {
 	width: 30%;
-	padding: 2rem 4rem 0rem 0rem;
+	padding: 2vh 4vw 0rem 0rem;
 }
 
 .backrobot img
 {
-	height: 25rem;
+	height: 50vh;
 }
 
 .elec
@@ -183,12 +183,12 @@ nav
 .circelec
 {
 	width: 55%;
-	padding: 0rem 0rem 0rem 4rem;
+	padding: 0rem 0rem 0rem 4vw;
 }
 
 .circelec img
 {
-	height: 22rem;
+	height: 44vh;
 }
 
 .contelec
@@ -196,8 +196,25 @@ nav
 	display: flex;
 	justify-content: space-between;
 	vertical-align: middle;
-	padding: 1rem;
+	padding: 1vh;
 	background-color: rgb(220,220,220);
+}
+
+.tuto
+{
+	height: 30vh;
+	padding: 0 4vw;
+	text-justify: auto;
+}
+
+.tuto p 
+{
+	text-align: justify;
+}
+
+.tuto h2
+{
+	text-align: center;
 }
 
 .equip
@@ -213,7 +230,7 @@ nav
 {
 	display: flex;
   	justify-content: space-between;
-	padding: 10px;
+	padding: 1vh;
 	height: 75vh;
 	flex-wrap: wrap;
 	max-width: 100%;
@@ -228,52 +245,9 @@ nav
 	flex: 1;
 }
 
-.descor20
-{
-	border: 3px;
-	border-radius: 1;
-	background-color: rgb(255,255,255);
-	text-align: center;
-	color: rgb(42,60,80);
-}
-
-.descor20 p
-{
-	text-align: center;
-	padding: 0px 25px;
-	font-size: 1.35rem;
-}
-
-.descor20 h1
-{
-	font-size: 2rem;
-	color: #1abc9c;
-}
-
-
-.laure
-{
-	border: 2px;
-	border-radius: 1;
-	background-color: rgb(255,255,255);
-	text-align: center;
-	color: rgb(42,60,80);
-
-}
-
-.laure h1
-{
-	font-size: 2rem;
-	color: #1abc9c;
-}
-
-.laure p
-{
-	text-align: center;
-	padding: 0px 25px;
-	font-size: 1.35rem;
-}
-
+.descor20,
+.laure,
+.akame,
 .i123456789
 {
 	border: 3px;
@@ -283,41 +257,25 @@ nav
 	color: rgb(42,60,80);
 }
 
+.descor20 p,
+.laure p,
+.akame p,
 .i123456789 p
 {
 	text-align: center;
-	padding: 0px 25px;
-	font-size: 1.35rem;
+	padding: 0px 2vh;
+	font-size: 3.2vh;
 }
 
+.descor20 h1,
+.laure h1,
+.akame h1,
 .i123456789 h1
 {
-	font-size: 2rem;
+	font-size: 5vh;
 	color: #1abc9c;
 }
 
-
-.akame
-{
-	border: 3px;
-	border-radius: 1;
-	background-color: rgb(255,255,255);
-	text-align: center;
-	color: rgb(42,60,80);
-}
-
-.akame p
-{
-	text-align: center;
-	padding: 0px 25px;
-	font-size: 1.35rem;
-}
-
-.akame h1
-{
-	font-size: 2rem;
-	color: #1abc9c;
-}
 
 footer
 {
@@ -325,7 +283,7 @@ footer
 	align-items: center;
 	height: 3vh;
 	width: 100%;
-	padding: 1rem 0rem 0rem 0rem;;
+	padding: 1vh 0rem 0rem 0rem;;
 	margin: 0px;
 }
 
@@ -333,7 +291,7 @@ footer p
 {
 	color: rgb(240,240,240);
 	text-align: center;
-	font-size: 0.8rem;
+	font-size: 1.6vh;
 	vertical-align: middle;
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 0.1vh 0px;
 }
